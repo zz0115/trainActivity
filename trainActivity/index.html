@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Train Activity</title>
+	<!-- Firebase Reference -->
+	<script src="https://www.gstatic.com/firebasejs/3.7.1/firebase.js"></script>
+	<!-- Bootstrap -->
+	<link rel="stylesheet" type="text/css" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+	<!-- css -->
+	<link rel="stylesheet" type="text/css" href="style.css">
+</head>
+<body>
+	<div class = "jumbotron" id="title">
+		<h1>Anytime is Train Time</h1>
+		<h5>Choo Choo. Chee Chee.</h5>
+	</div>
+
+	<div class = "jumbotron" id="currentTrainSchedule">
+		<h4>Current Train Schedule</h4>
+		<table class="table table-striped" id="train-table">
+			<thead>
+				<tr>
+					<th>Train Name</th>
+					<th>Destination</th>
+					<th>Frequency (min)</th>
+					<th>Next Arrival</th>
+					<th>Minutes Away</th>
+				</tr>
+			</thead>
+			<tbody>
+				
+			</tbody>
+		</table>
+	</div>
+
+	<div class = "jumbotron" id = "addTrain">
+		<h4>Add Train</h4>
+		<div class="container">
+			<form>
+				<div class="form-group">
+					<label for="trainName">Train Name</label>
+					<input type="text" class="form-control" id="trainName">
+				</div>
+				<div class="form-group">
+					<label for="destination">Destination</label>
+					<input type="text" class="form-control" id="destination">
+				</div>
+				<div class="form-group">
+					<label for="firstTrainTime">First Train Time (HH:mm - military time)</label>
+					<input type="text" class="form-control" id="firstTrainTime">
+				</div>
+				<div class="form-group">
+					<label for="frequency">Frequency (min)</label>
+					<input type="text" class="form-control" id="frequency">
+				</div>
+				<button type="submit" id="submit" class="btn btn-primary">Submit</button>
+			</form>
+		</div>
+	</div>
+
+	<!-- jQuery -->
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+	<!-- Script -->
+	<script src="app.js"></script>
+	<!-- moment -->
+	<script src="https://cdn.jsdelivr.net/momentjs/2.12.0/moment.min.js"></script>
+</body>
+</html>

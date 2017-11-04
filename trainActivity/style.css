@@ -1,0 +1,39 @@
+body {
+	background-image: url(background.jpg);
+	background-repeat: no-repeat;
+	background-position: center;
+	background-attachment: fixed;
+	background-color: #ADD8E6;
+}
+
+h1, h5 {
+	text-align: center;
+}
+
+h4 {
+	margin-top: 0;
+	background-color: orange;
+	font-weight: bold;
+	padding: 3px;
+}
+
+.jumbotron {
+	width: 80%;
+	margin: 10px auto;
+}
+
+#title {
+	padding: 5px;
+	background-color: orange;
+	opacity: 0.8;
+}
+
+#currentTrainSchedule {
+	padding: 5px;
+	opacity: 0.8;
+}
+
+#addTrain {
+	padding: 5px;
+	opacity: 0.8;
+}
